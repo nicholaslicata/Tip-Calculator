@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+
+    <form class="form" novalidate>
+        <h1>Tip Calculator</h1>
+        <div class="input-column">
+          <label>Bill Amount</label>
+          <input class="bill-amount" type="number" min="1" required>
+          <span class="bill-error error"></span>
+          <label>Tip Percentage</label>
+          <input class="tip-percentage" type="number" min="1" max="99" required>
+          <span class="tip-error error"></span>
+          <label>Split The Bill</label>
+          <input class="bill-split" type="number" min="1" required>
+          <span class="split-error error"></span>
+        <div class="button-row">
+          <button class="clear">Clear</button>
+          <button class="calculate" type="submit">Calculate</button>
+        </div>
+    </form>
+
+    <div class="results">
+      <p class="tip-total"></p>
+      <p class="bill-total"></p>
+      <p class="split-total"></p>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
